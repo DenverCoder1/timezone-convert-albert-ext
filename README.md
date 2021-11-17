@@ -6,7 +6,7 @@
 
 Extension for converting between timezones in [Albert launcher](https://albertlauncher.github.io/)
 
-![image](https://user-images.githubusercontent.com/20955511/142168605-4e4badca-5693-4c4f-8f20-f03b8723c97f.png)
+![Peek 2021-11-17 14-36](https://user-images.githubusercontent.com/20955511/142286371-7257b05c-1d84-40f6-b5a0-079525fe4c4b.gif)
 
 ## Installation
 
@@ -20,7 +20,7 @@ The data directories reside in the data directories of the application defined b
 /usr/share/albert/org.albert.extension.python/modules
 ```
 
-Double-clicking on a module in the settings will open the directory in the file manager.
+(Note: Double-clicking on a module in the settings will open the directory in the file manager.)
 
 2. Clone this repository into your `modules` directory.
 
@@ -30,13 +30,13 @@ cd /path/to/modules
 git clone https://github.com/DenverCoder1/timezone-convert-albert-ext.git
 ```
 
-3. Install `dateparser` using pip.
+3. Ensure that `dateparser` is installed using pip.
 
 ```bash
 python3 -m pip install dateparser
 ```
 
-4. Enable the extension in the settings.
+4. Enable the extension in the settings under `Extensions > Python`.
 
 ![settings](https://user-images.githubusercontent.com/20955511/142149401-188a865a-211e-4aa9-9e03-bf6314c2041e.png)
 
@@ -50,18 +50,53 @@ Examples:
 
 `8am MST in New York`
 
-## Config
+You can also use "Time in..." to convert the current time to another timezone.
 
-In `config.py` there are options to customize the extension:
+`Time in UTC`
 
-### 24-hour time
+`Time in Tokyo`
 
-To enable 24-hour time, set `hr24` to `True`.
+## Configuration
+
+In `config.jsonc` there are options to customize the extension:
+
+### Date format
+
+To change the way dates are displayed, set the `date_format` option.
+
+The default is `%a %d %b` (e.g. "Mon 12 Dec").
+
+See https://strftime.org for a list of supported formats
+
+### Time format
+
+To change the way times are displayed, set the `time_format` option.
+
+You can use `%H:%M` for 24-hour time, or `%I:%M %p` for 12-hour time.
+
+The default is `%I:%M %p` (eg. "12:00 PM")
+
+See https://strftime.org for a list of supported formats
+
+### Remove leading zeros
+
+Set `remove_leading_zeros` to true to remove leading zeros from the date/time.
+
+Eg. `Mon 01 Dec 01:00 PM` becomes `Mon Dec 1 1:00 PM`.
+
+The default is `true`.
+
+### Lowercase AM/PM
+
+Set `lowercase_am_pm` to replace 'AM'/'PM' with 'am'/'pm' in time formats.
+
+The default is `true`.
 
 ### Timezone aliases
 
-To add a city or abbreviation as an alias for a timezone, add it to `aliases` as a key-value pair.
+To add a city or abbreviation as an alias for a timezone, add it to `tz_aliases` as a key-value pair.
 
+See https://en.wikipedia.org/wiki/List_of_tz_database_time_zones for a list of supported timezones
 
 
 ## Contributing

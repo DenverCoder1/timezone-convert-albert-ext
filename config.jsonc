@@ -2,6 +2,7 @@
     // Date format
     //
     // %a = Weekday (eg. "Mon"), %d = Day (eg. "01"), %b = Month (eg. "Sep")
+    // Default: "%a %d %b" (eg. "Mon 01 Sep")
     //
     // See https://strftime.org for a list of supported formats
     "date_format": "%a %d %b",
@@ -13,14 +14,17 @@
     // 
     // For 24-hour clock, "%H:%M"
     // For 12-hour clock, "%I:%M %p"
+    // Default: "%I:%M %p" (eg. "12:00 PM")
     //
     // See https://strftime.org for a list of supported formats
     "time_format": "%I:%M %p",
 
     // Remove leading zeros from dates and times
+    // Default: true
     "remove_leading_zeros": true,
 
-    // Lowercase AM/PM - replace 'AM'/'PM' with 'am'/'pm' in time format
+    // Lowercase AM/PM - replace 'AM'/'PM' with 'am'/'pm' in time formats
+    // Default: true
     "lowercase_am_pm": true,
 
     // Timezone aliases to replace when parsing.
