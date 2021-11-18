@@ -30,7 +30,7 @@ __authors__ = "Jonah Lawrence"
 __py_deps__ = ["dateparser"]
 
 timezone_regex = re.compile(
-    r"(?P<from_time>.*(?:pm|am|\d:\d|time|now|current).*)\s(?:to|in)\s(?P<to_tz>.*)",
+    r"(?P<from_time>.*(?:pm|am|\d:\d|time|now|current|noon|midnight).*)\s(?:to|in)\s(?P<to_tz>.*)",
     re.I,
 )
 
