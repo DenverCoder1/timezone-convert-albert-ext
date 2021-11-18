@@ -25,7 +25,7 @@ Examples:
 Date formats and timezone aliases can be set in config.jsonc
 """
 __title__ = "Timezone Convert"
-__version__ = "0.0.1"
+__version__ = "0.0.2"
 __authors__ = "Jonah Lawrence"
 __py_deps__ = ["dateparser"]
 
@@ -229,7 +229,7 @@ def create_item(text: str, subtext: str) -> albert.Item:
     """
     return albert.Item(
         id=__title__,
-        icon=str(Path(__file__).parent / "icons" / "clock.svg"),
+        icon=str(Path(__file__).parent / "icons" / "timezone.svg"),
         text=text,
         subtext=subtext,
         actions=[albert.ClipAction("Copy result to clipboard", text)],
