@@ -6,7 +6,7 @@
 
 Extension for converting between timezones in [Albert launcher](https://albertlauncher.github.io/)
 
-![Peek 2021-11-17 14-36](https://user-images.githubusercontent.com/20955511/142286371-7257b05c-1d84-40f6-b5a0-079525fe4c4b.gif)
+![demo](https://user-images.githubusercontent.com/20955511/142350619-0b84305e-0422-4e0c-8ecc-d1f6cdac540a.gif)
 
 ## Installation
 
