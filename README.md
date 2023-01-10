@@ -1,5 +1,7 @@
 # timezone-convert-albert-ext
 
+> **Warning**: This plugin is not supported in Albert >= 0.18
+
 [![discord](https://custom-icon-badges.herokuapp.com/discord/819650821314052106?color=5865F2&logo=discord-outline&logoColor=white "Dev Pro Tips Discussion & Support Server")](https://discord.gg/fPrdqh3Zfu)
 [![License MIT](https://custom-icon-badges.herokuapp.com/github/license/DenverCoder1/timezone-convert-albert-ext.svg?logo=repo)](https://github.com/DenverCoder1/timezone-convert-albert-ext/blob/main/LICENSE)
 [![code style black](https://custom-icon-badges.herokuapp.com/badge/code%20style-black-black.svg?logo=black-b&logoColor=white)](https://github.com/psf/black)
